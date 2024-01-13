@@ -1,9 +1,3 @@
-/* ==[ PLAYGROUND Challenge! ]== */
-
-/* This challenge includes several smaller challenges and allows you to
-play around with the concepts you've learned. Read the instructions 
-carefully. */
-
 :root {
   /* Color Variables */
   --background-color: #1e1e1e;
@@ -24,12 +18,93 @@ body {
 }
 header {
   position: sticky;
-  border-top: 0.5em solid #ec5555;
+  max-height: 3em;
+  border-top: 4px solid #ec5555;
 }
 header > ul {
   display: flex;
   justify-content: flex-end;
   gap: 1em;
   list-style: none;
-  padding: 1em;
+  padding: 2em;
+  margin-top: -5%;
+  max-height: 6.5em;
+}
+
+header > ul > li > a {
+  color: #fbfbfb;
+  text-decoration: none;
+}
+
+header > ul > li > a:hover {
+  border-bottom: 0.2em solid #603fe3;
+}
+/*Landing page */
+.logo {
+  /* margin-top: 10em; */
+  margin-top: 57%;
+  height: 100%;
+  width: 100%;
+}
+
+h2 {
+  text-align: end;
+  margin-right: 5%;
+  font-size: 1em;
+}
+
+@media screen and (orientation: landscape) {
+  section {
+    display: flex;
+    justify-content: space-between;
+    justify-items: flex-start;
+    padding-top: -20%;
+  }
+  .logo {
+    margin-top: 0%;
+    height: 45%;
+    width: 45%;
+  }
+  h2 {
+    font-size: 1.1em;
+    margin-right: 2em;
+    align-self: flex-end;
+    margin-bottom: 0em;
+  }
+}
+
+@media screen and (min-width: 678px) {
+  header > ul {
+    margin-top: 0%;
+  }
+  header > ul > li {
+    font-size: 2em;
+  }
+
+  .logo {
+    margin-top: 20%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  header > ul > li {
+    margin-left: 2em;
+  }
+}
+
+/*Me page*/
+
+.skizze_section {
+  position: relative;
+  border: 2px solid blue;
+  height: 30em;
+}
+
+.skizze {
+  height: 500px;
+  width: 300px;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  border: 2px solid red;
 }
