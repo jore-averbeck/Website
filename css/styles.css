@@ -1,6 +1,6 @@
 :root {
   /* Color Variables */
-  --background-color: #1e1e1e;
+  --background-color: #fafafa;
 }
 
 *,
@@ -12,99 +12,45 @@
 body {
   box-sizing: border-box;
   background-color: var(--background-color);
-  color: #fbfbfb;
-  font-size: 1.2em;
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
 header {
   position: sticky;
   max-height: 3em;
-  border-top: 4px solid #ec5555;
 }
+
 header > ul {
   display: flex;
   justify-content: flex-end;
-  gap: 1em;
+  gap: 1.5rem;
   list-style: none;
-  padding: 2em;
-  margin-top: -5%;
-  max-height: 6.5em;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-header > ul > li > a {
-  color: #fbfbfb;
+.link {
   text-decoration: none;
+  color: black;
 }
 
-header > ul > li > a:hover {
-  border-bottom: 0.2em solid #603fe3;
-}
-/*Landing page */
-.logo {
-  /* margin-top: 10em; */
-  margin-top: 57%;
-  height: 100%;
-  width: 100%;
-}
-
-h2 {
-  text-align: end;
-  margin-right: 5%;
-  font-size: 1em;
-}
-
-@media screen and (orientation: landscape) {
-  section {
-    display: flex;
+.section-landing {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #303179;
+  width: 90%;
+  height: 400px;
+  margin: 5rem auto 0;
+  @media only screen and (min-width: 601px) {
+    height: 400px;
+    margin-left: auto;
     justify-content: space-between;
-    justify-items: flex-start;
-    padding-top: -20%;
-  }
-  .logo {
-    margin-top: 0%;
-    height: 45%;
-    width: 45%;
-  }
-  h2 {
-    font-size: 1.1em;
-    margin-right: 2em;
-    align-self: flex-end;
-    margin-bottom: 0em;
   }
 }
 
-@media screen and (min-width: 678px) {
-  header > ul {
-    margin-top: 0%;
-  }
-  header > ul > li {
-    font-size: 2em;
-  }
-
-  .logo {
-    margin-top: 20%;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  header > ul > li {
-    margin-left: 2em;
-  }
-}
-
-/*Me page*/
-
-.skizze_section {
-  position: relative;
-  border: 2px solid blue;
-  height: 30em;
-}
-
-.skizze {
-  height: 500px;
-  width: 300px;
-  position: absolute;
-  bottom: 0%;
-  right: 0%;
-  border: 2px solid red;
+.landing-image {
+  height: 80%;
+  width: 40%;
 }
