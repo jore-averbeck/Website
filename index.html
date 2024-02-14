@@ -8,15 +8,24 @@
     />
     <title>Personal Website</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-nol2zoWzK3wM0qYCsRV09XeIoMjeN4brW6FpplN/0otRrqesGY5i4EhXTVRG/GIzC8kypA9bhRXfr//HFWtA3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
   <body>
     <header>
-      <ul class="landing_ul">
-        <li><a href="/index.html" class="link">About</a></li>
-        <li><a href="/me.html" class="link">Project</a></li>
-        <li><a href="/contact.html" class="link">Contact</a></li>
-      </ul>
+      <div >
+        <img src="/img/menu.svg" onClick="toggleMenu()" width="25px">
+        <ul class="landing_ul" id="menuLinks">
+          <li><a href="/index.html" class="link">About</a></li>
+          <li><a href="/me.html" class="link">Project</a></li>
+          <li><a href="/contact.html" class="link">Contact</a></li>
+        </ul>
+      </div>
+      
+        <img src="/img/Logo.svg"  height="100px" alt="logo" class="logo"/>
+   
     </header>
+    
 
     <main>
       <section class="section-landing">
@@ -27,5 +36,7 @@
         />
       </section>
     </main>
+    <script src="/index.js" defer></script>
+
   </body>
 </html>
