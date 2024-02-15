@@ -142,7 +142,7 @@ header {
 
 .article-about {
   margin-top: 5rem;
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
   background-color: #1c1b1f;
   padding: 2rem;
   padding-bottom: 5rem;
@@ -159,7 +159,7 @@ header {
  
 }
 
-.sub-article {
+.about-article {
   background-color: #303179;
   color: #fafafa;
   padding: 1rem; 
@@ -168,22 +168,26 @@ header {
  
 }
 
-.sub-article-heading{
+.about-article:hover {
+  background-color: #D9D9D9; 
+  color: #1C1B1F; }
+
+.about-article-heading{
   font-weight: bold;
 }
 
 .article-text{
   font-size: 0.9rem;
 }
-.sub-article>ul{
+.about-article>ul{
   list-style: none;
   margin-left: -2rem;
 }
-.sub-article>ul>li{
+.about-article>ul>li{
   padding-bottom: 1rem;
 }
 
-.sub-article-text{
+.about-article-text{
   overflow-wrap: break-word; 
   padding-bottom: 0.2rem;
 }
@@ -206,13 +210,66 @@ header {
     padding-bottom: 10rem;
     grid-gap: 1rem; 
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Breitere Grid-Zellen */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   }
   .article-heading{
     font-size: 4rem;
   }
-  .sub-article{
-    width: 100%; /* Breite auf 100% setzen, damit es automatisch an die Grid-Zelle anpasst */
+  .about-article{
+    width: 100%; 
     margin: 0 auto; 
+  }
+}
+
+/*Project*/
+
+.project-section{
+display: flex;
+flex-direction: column;
+margin-bottom: 3rem;
+}
+
+.project-section>h3{
+  font-size: 2rem;
+}
+
+.project-section>article{
+  display: flex;
+  justify-content: space-between;
+  background-color: #303179;
+  padding: 1rem;
+  gap:1rem;
+}
+
+
+.text-container{
+  background-color: #fafafa;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+  padding:1rem;
+}
+
+.reuse{
+  height:300px;
+}
+
+.tech-span{
+margin: 0.5rem;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+padding: 0.1rem;
+background-color: #D9D9D9;
+}
+
+@media only screen and (min-width: 992px){
+  .project-section{
+    height:700px;
+  }
+  .project-section>h3{
+    font-size: 4rem;
+  }
+  .project-section>article{
+    flex-direction: row;
   }
 }
