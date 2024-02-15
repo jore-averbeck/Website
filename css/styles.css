@@ -25,13 +25,18 @@ header {
   max-height: 3em;
   z-index: 2; 
   gap: 2rem;
+  position: relative;
 }
 
 .logo {
   margin: 0.7rem;
   margin-right: 1.5rem;
+  position: absolute;
+  top:0;
+  right:0;
 }
 
+/*Landing Page*/
 .landing_ul {
   gap: 1rem;
   list-style: none;
@@ -66,6 +71,61 @@ header {
   color: #797a7a; 
 }
 
+.section-landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #303179;
+  color: #fafafa;
+  width: 90%;
+  height: 450px;
+  margin: 7rem auto 0;
+}
+
+.landing-image {
+  height: 70%;
+  width: 60%;
+  margin-bottom: 1rem;
+  
+}
+
+.section-heading {
+  opacity: 0; 
+  transition: opacity 2s ease-in-out; 
+  height:20%;
+  
+}
+
+.section-heading.loaded {
+  opacity: 1; 
+}
+
+/*Landing Page Responsive*/
+
+@media only screen and (min-width: 992px){
+  .logo{
+    margin-right: 4.7rem;
+  }
+  .landing-image{
+    height: 90%;
+    
+  }
+  .section-landing {
+    flex-direction: row;
+    height: 400px;
+    margin-left: auto;
+    justify-content: space-between;
+    padding: 1rem;
+    gap:1.5rem;
+  }
+  .section-heading{
+    font-size: 5rem;
+    
+  }
+
+}
+
 @media only screen and (max-width: 600px) {
   .landing_ul.active {
     display: flex;
@@ -78,60 +138,35 @@ header {
   }
 }
 
-.section-landing {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+/*Article*/
+
+.article-about {
+  margin-top: 5rem;
+  margin-bottom: 15rem;
+  background-color: #1c1b1f;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Automatische Spaltenanpassung */
+  grid-gap: 1rem; /* Abstand zwischen den Grid-Zellen */
+}
+
+.article-heading {
+  font-size: 2rem;
+  color: #fafafa;
+  grid-column: 1 / -1; 
+  text-align: center;
+}
+
+.sub-article {
   background-color: #303179;
   color: #fafafa;
-  width: 90%;
-  height: 400px;
-  margin: 5rem auto 0;
+  padding: 1rem; 
+  text-align: center; 
 }
 
-@media only screen and (min-width: 601px) {
-  .section-landing {
-    flex-direction: row;
-    height: 400px;
-    margin-left: auto;
-    justify-content: space-between;
-    padding: 1rem;
-  }
-}
-
-.landing-image {
-  height: 70%;
-  width: 60%;
-  margin-bottom: 1rem;
-  
-}
-
-@media only screen and (min-width:601px){
-  .landing-image{
-    height: 100%;
-    
+@media only screen and (min-width: 992px){
+  .article-about{
+    margin-top: 7rem;
   }
 
-
-}
-
-
-.section-heading {
-  opacity: 0; 
-  transition: opacity 2s ease-in-out; 
-  height:20%;
-  
-}
-@media only screen and (min-width:601px){
-  .section-heading{
-    font-size: 5rem;
-    
-  }
-
-
-}
-
-.section-heading.loaded {
-  opacity: 1; 
 }
