@@ -70,8 +70,7 @@ header {
 }
 
 .logo {
-  margin: 0.7rem;
-  margin-right: 1.5rem;
+  margin: 0.7rem 1.5rem 0.7rem 0;
   position: absolute;
   top:1rem;
   right:0;
@@ -160,16 +159,13 @@ header {
   .section-landing {
     flex-direction: row;
     height: 400px;
-    margin-left: auto;
+    margin: 10rem 1rem 23rem auto;
     justify-content: space-between;
     padding: 1rem;
-    gap:1.5rem;
-    margin-top: 10rem;
-    margin-bottom: 23rem;
+    gap: 1.5rem;
   }
   .section-heading{
     font-size: 5rem;
-    
   }
 
 }
@@ -221,7 +217,7 @@ header {
 }
 
 .about-article:hover {
-  background-color: var(--yellow); 
+  background-color: var(--third); 
   color: var(--black); }
 
   .about-article.border{
@@ -252,8 +248,7 @@ header {
 }
 
 .about-article.text-wrapper{
-  margin-top: -4rem;
-  margin-bottom: 1rem;
+  margin: -4rem 0 1rem 0;
 }
 
 .arrow{
@@ -265,8 +260,7 @@ header {
   background-color: var(--primary);
   color: var(--black);
   padding: 0.2rem 0.5rem;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin: 0 0.5rem 0.5rem 0;
   border-radius: 0.3rem;
 }
 
@@ -318,9 +312,7 @@ header {
   height:auto;
   border-top: 15px solid var(--black);
   padding-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 1rem;
+  margin: 1rem 1rem 0 1rem;
 }
 
 .project-section>h3{
@@ -406,30 +398,31 @@ font-size: 1rem;
    
 }
 
+@media only screen and (min-width: 1250px){
+  .project-section{
+    margin-top: 15rem;
+  }
+}
+
 /*contact*/
 .contact {
   display: flex;
   gap:1rem;
   align-items: center; 
   border: 15px solid var(--black);
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 3rem;
-  margin-top: 5rem;
+  margin: 5rem 1rem 3rem 1rem;
   padding: 1rem;
 }
 
 .contact>article>h3{
   color:var(--secondary);
   font-size: 2rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
+  padding: 0 1rem 1rem 0;
 }
 
 .contact-ul{
   list-style: none;
-  margin-left: -1rem;
-  margin-top: -3rem;
+  margin: -3rem 0 0  -1rem;
 }
 .contact-image{
   height:50px;
