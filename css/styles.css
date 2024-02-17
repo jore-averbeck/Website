@@ -4,7 +4,7 @@
   --black:#080708;
 
   --primary:#3772ff;
-  --secondary:#df2935;
+  --secondary:#F26321;
   --third:#fdca40;
 }
 
@@ -81,18 +81,19 @@ header {
   gap: 1rem;
   list-style: none;
   margin-right: 1rem;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
   z-index: 2; 
   display: none; 
   position: absolute; 
   list-style: none;
-  top: 0.7rem; 
+  top: 0rem; 
   left: 0; 
   background-color: var(--white); 
   padding: 1rem; 
   z-index: 1; 
   width: 100%;
+  border-bottom: 5px solid var(--secondary);
 }
 
 .landing_ul.active {
@@ -159,7 +160,7 @@ header {
   .section-landing {
     flex-direction: row;
     height: 400px;
-    margin: 10rem 1rem 23rem auto;
+    margin: 10rem auto 23rem auto;
     justify-content: space-between;
     padding: 1rem;
     gap: 1.5rem;
@@ -313,6 +314,7 @@ header {
   border-top: 15px solid var(--black);
   padding-top: 1rem;
   margin: 1rem 1rem 0 1rem;
+  margin-top: 3rem;
 }
 
 .project-section>h3{
