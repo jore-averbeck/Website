@@ -23,3 +23,4 @@ function hideTextContainer(containerID, imageID){
   textContainer.classList.remove("show");
   image.classList.remove("hide");
 }
+

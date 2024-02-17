@@ -22,11 +22,21 @@ body {
   
 }
 
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
 a{
   color: var(--black);
   text-decoration-line: underline; 
   text-decoration-color: var(--blue);
   text-decoration-thickness: 2px;
+}
+
+button{
+  background: transparent;
+  border:none;
 }
 
 header {
@@ -222,13 +232,14 @@ header {
 }
 
 .about-article.text-wrapper{
-  margin-top: -5rem;
+  margin-top: -4rem;
   margin-bottom: 1rem;
 }
 
 .arrow{
   margin-bottom:-0.25rem;
 }
+
 .tag {
   display: inline-block;
   background-color: var(--blue);
@@ -263,6 +274,9 @@ header {
     .about-article.text-wrapper{
       margin-top: 0rem;
       margin-bottom: 0rem;
+    }
+    .about-article.tag-wrapper{
+      padding-top: 6rem;
     }
 }
 
