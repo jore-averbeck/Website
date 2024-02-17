@@ -1,11 +1,11 @@
 :root {
   /* Color Variables */
-  --background-color: #fafafa;
-  --white:#e6e8e6;
-  --blue:#3772ff;
-  --red:#df2935;
-  --yellow:#fdca40;
+  --white:#fafafa;
   --black:#080708;
+
+  --primary:#3772ff;
+  --secondary:#df2935;
+  --third:#fdca40;
 }
 
 *,
@@ -16,8 +16,8 @@
 
 body {
   box-sizing: border-box;
-  background-color: #fafafa;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
   font-family: Onest;
   
 }
@@ -30,7 +30,7 @@ button:hover {
 a{
   color: var(--black);
   text-decoration-line: underline; 
-  text-decoration-color: var(--blue);
+  text-decoration-color: var(--primary);
   text-decoration-thickness: 2px;
 }
 
@@ -45,18 +45,15 @@ button{
   bottom: 20px; 
   right: 20px; 
   z-index: 99; 
-  background-color: #3772ff; 
-  color: #fff; 
+  background-color: var(--primary); 
   border: none; 
   border-radius: 50%; 
   padding: 15px; 
-  font-size: 16px; 
   cursor: pointer; 
-
 }
 
 .scroll-button:hover {
-  background-color: var(--yellow); 
+  background-color: var(--third); 
 }
 
 
@@ -93,7 +90,7 @@ header {
   list-style: none;
   top: 0.7rem; 
   left: 0; 
-  background-color: var(--background-color); 
+  background-color: var(--white); 
   padding: 1rem; 
   z-index: 1; 
   width: 100%;
@@ -107,12 +104,12 @@ header {
 
 .link {
   text-decoration: none;
-  color: black;
+  color: var(--black);
   transition: color 0.3s; 
 }
 
 .link:hover {
-  color: #3772FF; 
+  color: var(--primary); 
   font-size: 1.01rem;
 }
 
@@ -126,7 +123,7 @@ header {
   width: 90%;
   height: 450px;
   margin: 7rem auto 0;
-  border:15px solid black;
+  border:15px solid var(--black);
   margin-bottom: 2rem;
 
 }
@@ -201,7 +198,7 @@ header {
 
 .article-heading {
   font-size: 3rem;
-  color: var(--blue);
+  color: var(--primary);
   text-align: center;
   margin-top: 7rem;
 
@@ -217,7 +214,7 @@ header {
 }
 
 .about-article {
-  color: #fafafa;
+  color: var(--white);
   padding: 1rem; 
   height:fit-content;
  
@@ -225,10 +222,10 @@ header {
 
 .about-article:hover {
   background-color: var(--yellow); 
-  color: #1C1B1F; }
+  color: var(--black); }
 
   .about-article.border{
-    border:5px solid #fafafa;
+    border:5px solid var(--white);
   }
 
 .about-article-heading{
@@ -238,7 +235,7 @@ header {
 
 .article-text{
   font-size: 1rem;
-  background-color: var(--blue);
+  background-color: var(--primary);
   padding: 1rem;
 }
 .about-article>ul{
@@ -265,7 +262,7 @@ header {
 
 .tag {
   display: inline-block;
-  background-color: var(--blue);
+  background-color: var(--primary);
   color: var(--black);
   padding: 0.2rem 0.5rem;
   margin-right: 0.5rem;
@@ -343,7 +340,7 @@ header {
 
 .text-container {
   display: none;
-  background-color: #fafafa;
+  background-color: var(--white);
   padding: 1rem;
   height: 400px;
   width: 230px;
@@ -359,7 +356,7 @@ header {
 .text-container>h5{
 background-color: var(--black);
 margin-top: -0.5rem;
-color:#fafafa;
+color:var(--white);
 padding: 1rem;
 border-radius: 0.8rem;
 font-size: 1rem;
@@ -423,7 +420,7 @@ font-size: 1rem;
 }
 
 .contact>article>h3{
-  color:var(--red);
+  color:var(--secondary);
   font-size: 2rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
@@ -452,7 +449,7 @@ font-size: 1rem;
   }
   
   .contact>article>h3{
-    color:var(--red);
+    color:var(--secondary);
     font-size: 3rem;
   }
 
