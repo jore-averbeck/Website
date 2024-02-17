@@ -39,6 +39,27 @@ button{
   border:none;
 }
 
+.scroll-button{
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 99; 
+  background-color: #3772ff; 
+  color: #fff; 
+  border: none; 
+  border-radius: 50%; 
+  padding: 15px; 
+  font-size: 16px; 
+  cursor: pointer; 
+
+}
+
+.scroll-button:hover {
+  background-color: var(--yellow); 
+}
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -380,9 +401,9 @@ font-size: 1rem;
   }
 }
 
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 999px){
   .project-section{
-    margin-top: 10rem;
+    margin-top: 30rem;
     margin-bottom: 18rem;
   }
    
