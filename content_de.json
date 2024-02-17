@@ -1,0 +1,35 @@
+{
+  "about": {
+    "heading": "ÜBER MICH",
+    "name": "Jore Noa Averbeck",
+    "education": [
+      "MA Gender Studies",
+      "BA Erziehungswissenschaft und Soziologie",
+      "Zertifikat: Webentwicklung"
+    ],
+    "description": "Während meiner wissenschaftlichen Laufbahn interessierte ich mich besonders für agiles und innovatives Problemlösen. In diesem Zusammenhang konnte ich nicht nur meine analytischen Fähigkeiten unter Beweis stellen, sondern auch meine Fähigkeit perfektionieren, mich kontinuierlich in neue Themen einzuarbeiten. Meine Masterarbeit habe ich im Bereich Inklusion geschrieben und setze mich auch privat für Barrierefreiheit ein. Als Projektleiter habe ich außerdem umfangreiche Erfahrungen in allen Bereichen der Projektorganisation gesammelt. Gleichzeitig habe ich es genossen, unter dem Pseudonym \"noname_noa\" digitale Kunst/Gedichte zu schaffen und habe bereits meine ersten Werke veröffentlicht."
+  },
+  "projects": {
+    "heading": "PROJEKTE",
+    "project1": {
+      "title": "Reuse: Upcycling App",
+      "description": "Eine App zum Teilen von Upcycling-Ideen und zur Verbesserung der Nachhaltigkeit"
+    },
+    "project2": {
+      "title": "Recipe4U",
+      "description": "Ein digitales Kochbuch mit Datenbankverbindung"
+    },
+    "project3": {
+      "title": "Check",
+      "description": "Eine einfache ToDo-App mit Datenbankverbindung"
+    }
+  },
+  "contact": {
+    "heading": "Kontakt",
+    "links": {
+      "linkedin": "LinkedIn",
+      "github": "Github",
+      "contact": "Kontakt aufnehmen"
+    }
+  }
+}
