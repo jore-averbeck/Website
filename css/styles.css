@@ -191,7 +191,7 @@ header {
 
 /*Article*/
 
-.article-about {
+.section-about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -274,7 +274,7 @@ header {
 }
 
 @media only screen and (min-width: 992px){
-  .article-about{
+  .section-about{
     margin-top: 7rem;
     height:750px;
     padding-bottom: 1rem;

@@ -25,23 +25,19 @@ function hideTextContainer(containerID, imageID){
 }
 
 function scrollToTop() {
-  // Scrollen nach oben mit der smooth scroll-Funktion
   window.scrollTo({
     top: 0,
     behavior: "smooth"
   });
 }
 
-// JavaScript-Funktion zum Anzeigen/Verstecken des "Scroll to Top"-Buttons
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  // Überprüfen, ob der Benutzer nach unten gescrollt hat
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    // Wenn ja, Button anzeigen
     document.getElementById("scrollToTopBtn").style.display = "block";
   } else {
-    // Andernfalls, Button ausblenden
     document.getElementById("scrollToTopBtn").style.display = "none";
   }
 }
