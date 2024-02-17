@@ -192,6 +192,7 @@ header {
   background-color: var(--black);
   gap:2rem;
   padding:2rem;
+
 }
 
 .about-article {
@@ -264,13 +265,13 @@ header {
   }
   .article-heading{
     font-size: 4rem;
-    margin-top: 5rem;
+    margin-top: 25rem;
   }
   .article-container{
     gap:3rem;
     justify-content: space-around;
     padding:4rem;
-    margin-bottom: 20rem;
+    margin-bottom: 25rem;
   }
     .about-article.text-wrapper{
       margin-top: 0rem;
@@ -280,6 +281,15 @@ header {
       padding-top: 6rem;
     }
 }
+
+@media only screen and (min-width: 1200px){
+  
+  .article-heading{
+    font-size: 4rem;
+    margin-top: 10rem;
+  }
+}
+
 
 /*Project*/
 
