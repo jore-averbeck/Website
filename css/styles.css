@@ -56,6 +56,24 @@ button{
   background-color: var(--third); 
 }
 
+.select-language-wrapper{
+  background-color: var(--secondary);
+  width: fit-content;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.select-language-wrapper>button{
+  font-size: 1rem;
+ background-color: var(--white);
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.select-language-wrapper>button:hover{
+ background-color: var(--primary);
+}
+
 
 header {
   display: flex;

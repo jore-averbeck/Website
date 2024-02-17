@@ -17,11 +17,11 @@
     },
     "project2": {
       "title": "Recipe4U",
-      "description": "Ein digitales Kochbuch mit Datenbankverbindung"
+      "description": "Ein digitales Kochbuch mit Datenbankanbindung"
     },
     "project3": {
       "title": "Check",
-      "description": "Eine einfache ToDo-App mit Datenbankverbindung"
+      "description": "Eine einfache ToDo-App mit Datenbankanbindung"
     }
   },
   "contact": {
