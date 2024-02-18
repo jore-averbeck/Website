@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function showTextContainer(containerId, imageID) {
   const image = document.getElementById(imageID);
   const textContainer = document.getElementById(containerId);
-  textContainer.classList.toggle("show");
+  textContainer.classList.add("show");
   image.classList.add("hide");
 }
 
