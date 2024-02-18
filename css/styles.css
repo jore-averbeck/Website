@@ -295,7 +295,7 @@ header {
   .about-article:hover {
     background-color: var(--third); 
     color: var(--black); }
-    
+
   .article-heading{
     font-size: 4rem;
     margin-top: 25rem;
@@ -386,7 +386,6 @@ font-size: 1rem;
 .section-image.hide{
   display: none;
 }
-
 
 
 @media only screen and (min-width: 500px){
