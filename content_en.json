@@ -23,13 +23,6 @@
         "title": "Check",
         "description": "A simple ToDo app with a database connection"
       }
-    },
-    "contact": {
-      "heading": "Contact",
-      "links": {
-        "linkedin": "LinkedIn",
-        "github": "Github"
-      }
     }
   }
   

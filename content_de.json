@@ -23,12 +23,5 @@
       "title": "Check",
       "description": "Eine einfache ToDo-App mit Datenbankanbindung"
     }
-  },
-  "contact": {
-    "heading": "Kontakt",
-    "links": {
-      "linkedin": "LinkedIn",
-      "github": "Github"
-    }
   }
 }
