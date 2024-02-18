@@ -235,9 +235,6 @@ header {
  
 }
 
-.about-article:hover {
-  background-color: var(--third); 
-  color: var(--black); }
 
   .about-article.border{
     border:5px solid var(--white);
@@ -294,6 +291,11 @@ header {
     height:250px;
     width:500px;
   }
+
+  .about-article:hover {
+    background-color: var(--third); 
+    color: var(--black); }
+    
   .article-heading{
     font-size: 4rem;
     margin-top: 25rem;
@@ -374,15 +376,6 @@ border-radius: 0.8rem;
 font-size: 1rem;
 }
 
-.project-section article:hover .text-container {
-  display: flex;
-  flex-direction: column;
-}
-
-
-.project-section article:hover img {
-  display: none;
-}
 
 .section-image{
   height:400px;
@@ -400,6 +393,15 @@ font-size: 1rem;
   .project-section{
     margin-top: 19rem;
     margin-bottom: 7rem;
+  }
+
+  .project-section article:hover .text-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-section article:hover img {
+    display: none;
   }
   
   .project-section>h3{
